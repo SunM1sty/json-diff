@@ -1,0 +1,58 @@
+{
+  "name": "m1sty-json-diff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "private": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "jest",
+    "compile": "tsc ./src/index.ts && node ./src/index.js",
+    "start": "nodemon -e ts --exec \"npm run compile\"",
+    "prettier": "prettier --write ./src/**",
+    "prettier:check": "prettier --check ./src/**",
+    "eslint": "eslint ./src/**/*.ts --max-warnings 0",
+    "eslint:dump": "eslint --print-config ./.eslintrc",
+    "format:fix": "npm run prettier && npm run eslint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunM1sty/json-diff.git"
+  },
+  "keywords": [
+    "json",
+    "difference",
+    "json-diff",
+    "diff-json",
+    "json-analyzer"
+  ],
+  "author": "Vladimir Kozhukhar <m1stygit@gmail.com>",
+  "contributors": [
+    "Vladimir Kozhukhar <m1stygit@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SunM1sty/json-diff/issues"
+  },
+  "homepage": "https://github.com/SunM1sty/json-diff#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "winston": "^3.11.0"
+  }
+}

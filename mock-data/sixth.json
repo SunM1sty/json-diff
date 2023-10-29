@@ -1,0 +1,8 @@
+{
+  "id": 6,
+  "name": "Анастасия",
+  "surname": "Чернявская",
+  "language": "Мандарийский",
+  "cars": "Suzuki Liana s4",
+  "book": ["string"]
+}
