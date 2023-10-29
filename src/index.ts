@@ -110,11 +110,3 @@ export class JsonDifference<T extends object> {
     return this
   }
 }
-
-const paths = [
-  'mock-data',
-  'mock-data\\json',
-  'mock-data\\fifth.json'
-]
-
-new JsonDifference(paths).copyJsonData().encountKeys().findMissingKeys().jsonWithMissingKeysArray
