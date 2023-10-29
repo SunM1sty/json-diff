@@ -1,7 +1,6 @@
 import * as fs from 'fs'
 import { PathFinder } from './PathFinder'
 import { LoggerService } from './LoggerService'
-import * as path from 'path'
 
 type JSONKey = string | number | symbol
 
